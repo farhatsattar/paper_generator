@@ -16,12 +16,12 @@ import arabic_reshaper
 load_dotenv()
 
 # ✅ Verify Font File
-urdu_font_path = r"F:\crewai\edu_proj\paper_generator\fonts\NotoNastaliqUrdu-Regular.ttf"
+urdu_font_path = r"F:\\crewai\\edu_proj\\paper_generator\\fonts\\NotoNastaliqUrdu-Regular.ttf"
 
 
 # ✅ Check if the font file exists before using it
-# if not os.path.exists(urdu_font_path):
-#     raise FileNotFoundError(f"❌ Font file missing: {urdu_font_path}")
+ if not os.path.exists(urdu_font_path):
+     raise FileNotFoundError(f"❌ Font file missing: {urdu_font_path}")
 
 # ✅ Register the Urdu Font
 pdfmetrics.registerFont(TTFont("UrduFont", urdu_font_path))
