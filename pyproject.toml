@@ -1,0 +1,29 @@
+[project]
+name = "paper-generator"
+version = "0.1.0"
+description = "Add your description here"
+readme = "README.md"
+authors = [
+    { name = "farhat sattar", email = "farhatsattar8675@gmail.com" }
+]
+requires-python = ">=3.11.6"
+dependencies = [
+    "arabic-reshaper>=3.0.0",
+    "crewai>=0.108.0",
+    "crewai-tools>=0.38.1",
+    "dotenv>=0.9.9",
+    "google-generativeai>=0.8.4",
+    "litellm>=1.60.2",
+    "python-bidi>=0.6.6",
+    "reportlab>=4.3.1",
+    "streamlit>=1.43.2",
+    "wikipedia-api>=0.8.1",
+]
+
+[project.scripts]
+paper-generator = "paper_generator:main"
+proj="paper_generator.main:generate_paper"
+
+[build-system]
+requires = ["hatchling"]
+build-backend = "hatchling.build"
