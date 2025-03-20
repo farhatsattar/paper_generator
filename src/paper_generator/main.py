@@ -20,8 +20,8 @@ urdu_font_path = r"F:\crewai\edu_proj\paper_generator\fonts\NotoNastaliqUrdu-Reg
 
 
 # ✅ Check if the font file exists before using it
-if not os.path.exists(urdu_font_path):
-    raise FileNotFoundError(f"❌ Font file missing: {urdu_font_path}")
+# if not os.path.exists(urdu_font_path):
+#     raise FileNotFoundError(f"❌ Font file missing: {urdu_font_path}")
 
 # ✅ Register the Urdu Font
 pdfmetrics.registerFont(TTFont("UrduFont", urdu_font_path))
