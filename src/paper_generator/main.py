@@ -10,7 +10,9 @@ from reportlab.pdfgen import canvas
 from reportlab.pdfbase.ttfonts import TTFont
 from reportlab.pdfbase import pdfmetrics
 from bidi.algorithm import get_display  
-import arabic_reshaper  
+import arabic_reshaper 
+
+
 
 # Load environment variables
 load_dotenv()
