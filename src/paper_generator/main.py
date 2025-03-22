@@ -10,15 +10,13 @@ from reportlab.pdfgen import canvas
 from reportlab.pdfbase.ttfonts import TTFont
 from reportlab.pdfbase import pdfmetrics
 from bidi.algorithm import get_display  
-import arabic_reshaper 
-
-
+import arabic_reshaper  
 
 # Load environment variables
 load_dotenv()
 
 # ✅ Verify Font File
-urdu_font_path = r"F:\crewai\edu_proj\paper_generator\fonts\NotoNastaliqUrdu-Regular.ttf"
+urdu_font_path = r"fonts/JameelNooriNastaleeqRegular.ttf"
 
 
 # ✅ Check if the font file exists before using it
