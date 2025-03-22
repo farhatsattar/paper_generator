@@ -16,7 +16,7 @@ import arabic_reshaper
 load_dotenv()
 
 # ✅ Verify Font File
-urdu_font_path = r"F:\\crewai\\edu_proj\\paper_generator\\fonts\\NotoNastaliqUrdu-Regular.ttf"
+urdu_font_path = r"fonts/JameelNooriNastaleeqRegular.ttf"
 
 
 # ✅ Check if the font file exists before using it
