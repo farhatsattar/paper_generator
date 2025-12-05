@@ -1,6 +1,6 @@
 import os
-import wikipediaapi  # ✅ Wikipedia alternative
-import sympy  # ✅ Math solver
+import wikipediaapi  # ✅ Wikipedia alternative  # type: ignore[import-untyped]
+import sympy  # ✅ Math solver  # type: ignore[import-untyped]
 from crewai import Crew, Agent, Task
 from dotenv import load_dotenv
 import streamlit as st
