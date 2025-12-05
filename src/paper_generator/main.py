@@ -1,7 +1,7 @@
 import os
-import wikipediaapi  # ✅ Wikipedia alternative  # type: ignore[import-untyped]
-import sympy  # ✅ Math solver  # type: ignore[import-untyped]
-from crewai import Crew, Agent, Task
+import wikipediaapi as wikipediaapi  # ✅ Wikipedia alternative  # type: ignore[import]
+import sympy  # ✅ Math solver  # type: ignore[import-not-found]
+from crewai import Crew, Agent, Task  # type: ignore[import-not-found]
 from dotenv import load_dotenv
 import streamlit as st
 from io import BytesIO
@@ -10,7 +10,7 @@ from reportlab.pdfgen import canvas
 from reportlab.pdfbase.ttfonts import TTFont
 from reportlab.pdfbase import pdfmetrics
 from bidi.algorithm import get_display  
-import arabic_reshaper  
+import arabic_reshaper  # type: ignore[import-not-found]
 
 # Load environment variables
 load_dotenv()
