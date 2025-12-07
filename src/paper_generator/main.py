@@ -15,6 +15,8 @@ import arabic_reshaper  # type: ignore[import-not-found]
 # Load environment variables
 load_dotenv()
 
+GOOGLE_API_KEY = os.environ.get('GOOGLE_API_KEY')
+
 # ✅ Verify Font File
 urdu_font_path = r"fonts/JameelNooriNastaleeqRegular.ttf"
 
