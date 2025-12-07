@@ -5,10 +5,10 @@ from crewai import Crew, Agent, Task  # type: ignore[import-not-found]
 from dotenv import load_dotenv
 import streamlit as st
 from io import BytesIO
-from reportlab.lib.pagesizes import letter
-from reportlab.pdfgen import canvas
-from reportlab.pdfbase.ttfonts import TTFont
-from reportlab.pdfbase import pdfmetrics
+from reportlab.lib.pagesizes import letter  # type: ignore[import-not-found, no-stubs]
+from reportlab.pdfgen import canvas  # type: ignore[import-not-found, no-stubs]
+from reportlab.pdfbase.ttfonts import TTFont  # type: ignore[import-not-found, no-stubs]
+from reportlab.pdfbase import pdfmetrics  # type: ignore[import-not-found, no-stubs]
 from bidi.algorithm import get_display  # type: ignore[import]
 import arabic_reshaper  # type: ignore[import-not-found, import, no-redef]
 
@@ -63,7 +63,7 @@ paper_designer = Agent(
     role=f"Structuring {subject} academic papers for Grade {grade} - {board} Board",
     goal=f"Ensure the {subject} paper follows the {board} board guidelines for Class {grade}, adhering to the {paper_pattern['Syllabus']}.",
     backstory="An AI assistant skilled in designing structured academic papers.",
-    model="gemini/gemini-2.0-flash",
+    model="gemini/gemini-2.5-flash",
 )
 
 question_generator = Agent(
@@ -71,7 +71,7 @@ question_generator = Agent(
     role=f"Creating diverse questions for {subject} academic paper",
     goal=f"Generate various types of {subject} questions for Class {grade}, ensuring alignment with the {paper_pattern['Syllabus']}.",
     backstory="An AI expert in crafting academic questions.",
-    model="gemini/gemini-2.0-flash",
+    model="gemini/gemini-2.5-flash",
 )
 
 quality_checker = Agent(
@@ -79,7 +79,7 @@ quality_checker = Agent(
     role=f"Ensuring high-quality and relevant {subject} questions",
     goal="Review and refine questions for clarity, accuracy, and adherence to the current syllabus.",
     backstory="An AI specialized in verifying academic content quality.",
-    model="gemini/gemini-2.0-flash",
+    model="gemini/gemini-2.5-flash",
 )
 
 # Define Tasks
