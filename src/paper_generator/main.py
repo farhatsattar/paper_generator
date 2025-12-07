@@ -9,8 +9,8 @@ from reportlab.lib.pagesizes import letter
 from reportlab.pdfgen import canvas
 from reportlab.pdfbase.ttfonts import TTFont
 from reportlab.pdfbase import pdfmetrics
-from bidi.algorithm import get_display  
-import arabic_reshaper  # type: ignore[import-not-found]
+from bidi.algorithm import get_display  # type: ignore[import]
+import arabic_reshaper  # type: ignore[import-not-found, import, no-redef]
 
 # Load environment variables
 load_dotenv()
